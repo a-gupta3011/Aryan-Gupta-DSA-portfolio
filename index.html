@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DSA Portfolio - Aryan Gupta</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative; 
+            z-index: 2; 
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #ecf0f1;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex: 1; 
+            position: relative; 
+            z-index: 1; 
+        }
+        h2, h3 {
+            color: #34495e;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 1rem;
+        }
+        .info li span {
+            font-weight: bold;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        .divider {
+            border-top: 2px solid #bdc3c7;
+            margin: 2rem 0;
+        }
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: relative; 
+            z-index: 100; 
+        }
+        footer p {
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aryan Gupta</h1>
+    <p>Currently pursuing B.Tech CSE at SRM University | Springdales School Batch of 2023</p>
+</header>
+
+<div class="container">
+    <h2>Contact Information</h2>
+    <ul class="info">
+        <li><span>Address:</span> New Delhi, Delhi, India</li>
+        <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/aryan-gupta-8306ba230/" target="_blank">Aryan Gupta</a></li>
+        <li><span>Registration Number:</span> RA2311003012319</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>Data Structures Studied</h2>
+    <h3>Primitive Data Types</h3>
+    <p>Primitive data types are the building blocks of all data structures. They include integers, floats, characters, and booleans. These types directly hold values and provide efficient storage and access. Understanding them is essential since they are the foundation upon which more complex data structures are built.</p>
+
+    <h3>Structures</h3>
+    <p>A struct in C allows us to group different data types under one name. For instance, a struct could represent a student with attributes like name (string) and age (integer). Structs are crucial for organizing data logically, especially when working with complex systems that require mixed data types.</p>
+
+    <h3>Self-referential Structures</h3>
+    <p>Self-referential structures contain pointers to other instances of the same structure. This design is key in implementing linked lists and trees, where each node contains data and a reference to the next node or child. They allow for dynamic and flexible memory usage, adapting to the needs of the application.</p>
+
+    <h3>Arrays</h3>
+    <p>Arrays are linear data structures that store elements of the same type in contiguous memory. They allow efficient access via indexing, making them suitable for storing a fixed-size collection of elements. I find them particularly useful in scenarios where fast access to elements is required, such as in sorting algorithms.</p>
+
+    <h3>Linked Lists</h3>
+    <p>Linked lists consist of nodes where each node holds data and a reference to the next node. Types include singly, doubly, and circular linked lists. Linked lists are ideal for applications requiring frequent insertions and deletions, as these operations are faster than in arrays due to the dynamic memory allocation.</p>
+
+    <h3>Stacks</h3>
+    <p>A stack operates on the Last-In-First-Out (LIFO) principle, where elements are pushed onto and popped from the top. It is widely used in function call management, parsing expressions, and handling undo operations in software. The simplicity of the stack structure makes it versatile and easy to implement.</p>
+
+    <h3>Queues</h3>
+    <p>Queues follow the First-In-First-Out (FIFO) order, where elements are enqueued at the rear and dequeued from the front. Variants include circular queues, double-ended queues, and priority queues. They are useful in scenarios like task scheduling, buffering data streams, and implementing breadth-first search algorithms.</p>
+
+    <h3>Trees</h3>
+    <p>Trees are hierarchical data structures with nodes connected by edges. The binary tree, AVL tree, and B-tree are common types, each with unique properties suited for different operations. Trees provide efficient searching, insertion, and deletion, especially in cases like managing hierarchical data (e.g., file systems).</p>
+
+    <h3>Heaps</h3>
+    <p>A heap is a specialized tree-based data structure used to maintain the max or min element at the root. It is particularly helpful in implementing priority queues. I have applied heaps in algorithms like Dijkstra’s for finding the shortest path, and they ensure efficient retrieval of priority elements.</p>
+
+    <h3>Hashing</h3>
+    <p>Hashing is a technique to map data to fixed-size values or keys, using hash tables. Techniques like separate chaining and open addressing are used to resolve collisions. Hash tables offer near-constant time complexity for search, insert, and delete operations, making them invaluable for quick lookups.</p>
+
+    <h3>Graphs</h3>
+    <p>A graph is a collection of vertices (nodes) and edges connecting them, used to represent relationships. Graphs are crucial in network analysis, shortest path calculations, and social network modeling. By applying algorithms like Dijkstra’s and Kruskal’s, I’ve understood how graphs efficiently model and solve complex connectivity problems.</p>
+
+    <div class="divider"></div>
+
+    <h2>Personal Insights</h2>
+    <p>When I studied graphs and Dijkstra’s algorithm, I was intrigued by how data structures could model real-world problems like navigation. This led me to develop a project: a simple navigation system that determines the shortest path and distance between two locations using Dijkstra’s algorithm. The core of the project revolves around the graph data structure, where I represented each location as a node and the roads between them as weighted edges, reflecting distances or travel times.</p>
+    <p>The project helped me explore how graphs work, particularly in real-world applications. By using adjacency lists to store each node’s connections, I could efficiently manage the graph’s structure. I implemented a priority queue (using a min-heap) to keep track of the shortest known distances, a crucial aspect of Dijkstra’s algorithm. The algorithm itself traverses the graph, dynamically updating distances for each node, ensuring optimal pathfinding in a weighted graph.</p>
+    <p>Through this project, I gained a deeper understanding of how Dijkstra’s algorithm leverages data structures like priority queues, heaps, and graphs to solve the shortest path problem. It reinforced how powerful these structures are in terms of both organizing and processing complex data efficiently. This experience solidified my grasp of graph theory and how data structures interact to solve problems in navigation and beyond.</p>
+
+    <div class="divider"></div>
+
+    <h2>Conclusion</h2>
+    <p>Each of these data structures is foundational to designing efficient algorithms and systems, and understanding their strengths and limitations has helped me in solving various computational problems.</p>
+</div>
+
+<footer>
+    <p>© 2024 Aryan Gupta | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
